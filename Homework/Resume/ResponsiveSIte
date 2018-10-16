@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html>
+
+  <head>
+    <title>Responsive</title>
+
+    <style>
+      header, footer{
+        background-color: purple;
+        width: 80%
+        height: 100px;
+      }
+
+      .cols
+      width: 40
+      height
+@media only screen and (min-width: 900px) {
+  
+}
+@media only screen and (max-width: 600 px)
+
+
+          </style>
+
+  </head>
+
+
+  <body>
+    <header></header>
+      <main>
+        <div class="cols"></div>
+        <div class="cols"></div>
+      </main>
+  </body>
+
+
+
+</html>
