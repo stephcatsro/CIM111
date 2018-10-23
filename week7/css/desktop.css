@@ -1,51 +1,80 @@
 
 
 header, footer{
-  width:80%
-  height:100px;
+  width:auto;
+  height: 200px;
   background-color: #FFD1F2;
-  margin:0 auto;
-  font-family: 'Bungee Shade', cursive;
+  margin:auto;
+  font-family: 'Bungee Shade';
+  text-align: center;
+  padding: 47px;
+  font-size: 130;
 }
 
+h1 {
+    font-size: 82px;
+}
+
+h2 {
+    font-family: 'Bungee Shade';
+    text-align: center;
+}
+
+
+p {
+   font-family:serif;
+   text-align: center;
+ }
+
+
 main{
-  width:80%;
-  height:600px;
-  background-color:#FFD1F2;
+  width:auto;
+  height:700px;
+  background-color:#D7F3FF;
   margin:0 auto;
 
+}
+
+.wrapper {
+  display: grid;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 960px;
+  padding-right: 1px;
+  padding-left:  1px;
+}
 }
 
 .col{
   width: 49.5%;
   height: 500px;
-  backround-color: #FFD1F2;
+  background: #FFD1F2;
   display: inline-block;
   vertical-align: top;
 
 }
 
 nav{
-  width: 320px;
-  height: 32px;
+  width:auto;
+  height: 40px;
   background-color: #A3EDF5;
-  margin: 0 auto;
+  margin:inherit;
 
 }
 
 nav ul{
-  margin-top: 0px;
+  margin-top: 50px;
 }
 nav ul li{
   list-style: none;
   display: inline-block;
   text-align: center;
-  margin-right: 18px;
+  margin-right: 10px;
 }
 nav ul li a{
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -56,18 +85,36 @@ nav ul li a:hover{
 
 
 footer{
-    width: 80%;
-    height: 600px;
-    background-color:#FCB5FF;
+    width: auto;
+    height: 150px;
+    background-color:#CCF5E9;
     margin: 0 auto;
+    font-size: 20px;
+}
+
+.column {
+  float: center;
+  width: 10%;
+  padding: 20px;
+}
+
+
+.row {
+  content: "img/th.JPG";
+  clear: both;
+  display: table;
+  justify-content: space-evenly;
 }
 
 #grid1{
   display: grid;
-  grid-template-areas: "col1 col2";
-  grid-template-rows: 1fr;
-  grid-template-columns: 50% 50%;
-  text-align: center;
+  grid-template-columns: auto;
+  grid-template-areas: "col1 col2 col3";
+  grid-auto-rows: auto;
+  justify-content: space-between;
+  margin-top: 8px;
+  background-color: #FFFEC7
+
 
 }
 
@@ -75,6 +122,7 @@ footer{
   grid-area: col1;
   background-color: #FFFBC5;
   height: auto;
+
 }
 
 #col2{
@@ -83,6 +131,11 @@ footer{
   height: auto;
 }
 
+#col3{
+  grid-area: col3;
+  background-color: #FFFBC5;
+  height: auto
+}
 #grid2{
   display: grid;
   grid-template-areas: "col3 col4";
@@ -112,7 +165,7 @@ footer{
 }
 
 .images{
-  height: 160px;
+  height: 275px;
   display: block;
   margin: 10px auto;
 
@@ -120,6 +173,7 @@ footer{
 
 #topImage{
   width: 100%;
-  height: auto;
+  height: 610px;
   display:inline-block;
+  padding-top: 10px
 }
