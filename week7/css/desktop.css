@@ -8,7 +8,11 @@ header, footer{
   font-family: 'Bungee Shade';
   text-align: center;
   padding: 47px;
+<<<<<<< HEAD
   font-size: 129;
+=======
+  font-size: 130;
+>>>>>>> 3b3824b189697d40088b37138bfd25b8c80181e1
 }
 
 h1 {
