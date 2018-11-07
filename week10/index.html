@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Is It Vintage?</title>
+
+    <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1 id=".fancy_title">HOW TO DETERMINE IF IT'S VINTAGE</h1>
+
+
+    </header>
+
+
+
+    <h2 id="info">See More </h2>
+    <h2 id="info">See More </h2>
+    <div id="recepticle"></div>
+
+    <h2>Click to view images</h2>
+    <img id="image1" src"https://c6.staticflickr.com/2/1087/682231827_6790b3145f_o.jpg" width="100">
+    <img id="image2" src"https://c6.staticflickr.com/2/1087/682231827_6790b3145f_o.jpg" width="100">
+    <div id="imagerecepticle"></div>
+
+    <h2>Show, Hide, and Toggle</h2>
+    <ul>
+      <li id="show">Show</li>
+      <li id="hide"> hide</li>
+      <li id="toggle"> toggle</li>
+    </ul>
+
+    <h2>TAGS & LABELS</h2>
+    <h3>Includes Origin</h3>
+    <p></p>
+    <h3>Same Brand, Different Label</h3>
+    <p>This can mean a brand just redesigned their label or it is from a specialty line,
+    but sometimes when you recognize the name but not the label, it might be from another era! </p>
+    <img id="toggle" src="oab.jpg" alt="Only At Bloomingdales, 1980s tag">
+    <h3>Care Tag</h3>
+    <p>Since 1971, the Federal Trade Commission has required manufacturers to add labels
+    explaining how to care for the item</p>
+    <h2>MATERIAL</h2>
+    <h3>Spandex</h3>
+    <p>1980s</p>
+    <h2>STITCHING</h2>
+    <h3>French/Unfinished Seams</h3>
+    <p>The edges of these seams were either left untouched or turned into French Seams</p>
+    <img src="fs.jpg" alt="Pinked Seams">
+    <h3>Pinked Seams</h3>
+    <p>Zig Zag pattern most commonly found on 1950's clothes</p>
+    <img src="ps.jpg" alt="Pinked Seams">
+    <h3>Serged Seams</h3>
+    <p>1960s+ when sewing machines became widely available</p>
+    <h2>NUMBERS</h2>
+    <h3>RN Numbers</h3>
+    <p></p>
+    <h2>IT'S NOT VINTAGE IF...</h2>
+    <h3>It was mass manufactured outside of the USA</h3>
+    <p>China, India, Thailand, Bangladesh, Vietnam, Indonesia, Guatemala, Mexico, Sri Lanka
+    are all countries where contemporary clothing is mass manufactured today</p>
+    <h3>The Label Says Vintage</h3>
+    <p>These items were considered contemporary at the time</p>
+
+    <div class="box"></div>
+
+      <!--local jquery script-->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <script>
+        $(document).ready(function(){
+
+          //All jquery code should be placed below
+          $(document).ready(function() {
+         	    $(".fancy_title").lettering();
+         	  });
+          $(".box").hide();
+
+            $("body").css("background-color","#d79bff");
+            $("h1").css("color","#406fe5");
+
+            $("#changeText").css("font-size", "800px");
+            $(".box").css("background-color", "blue");
+            $("#changeText").html("i love voting");
+
+            $("#changetext").click(function(){
+              $("body").css("background-color", "orange");
+
+            });
+
+              $("#info").mouseenter(function(){
+              $("#recepticle").html("<em> this information is important </em>");
+                $("#info").css("background-color", "blue");
+
+            });
+
+              $("#info").mouseleave(function(){
+                $("#recepticle").html("");
+
+                $("#info").css("background-color", "transparent");
+              });
+
+              $("#info").mouseleave(function(){
+                $("#recepticle").html("");
+                $("#info").css("background-color", "transparent");
+              });
+              $("#image1").click(function(){
+                $("#imageRecepticle").html('<img src="oab.jpg" width="300">');
+              });
+              $("#image2").click(function(){
+                $("#imageRecepticle").html('<img src="ps.jpg" width="300">');
+              });
+
+
+    $("#hide").click(function(){
+      $(".box").hide();
+
+    });
+
+    $("#show").click(function(){
+      $(".box").show();
+    });
+
+    $("#toggle").click(function(){
+      $(".box").toggle(1000);
+    });
+
+
+  });    //End of Document ready
+
+      </script>
+
+  </body>
+
+</html>
