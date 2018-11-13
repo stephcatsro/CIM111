@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>G'Day Mate!</title>
+<style>
+.header {
+  padding: 10px;
+    text-align: center;
+    background: lightblue;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight:bold;
+}
+.grid {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.8s linear 1s;
+}
+.images-loaded .grid {
+  opacity: 1;
+}
+.item {
+  position: absolute;
+  margin: 5px;
+  z-index: 1;
+}
+.item.muuri-item-hidden {
+  z-index: 0;
+}
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+.item.muuri-item-dragging {
+  z-index: 3;
+}
+.item-content {
+  position: relative;
+  cursor: pointer;
+}
+.item-content > img {
+  display: block;
+  border-radius: 6px;
+}
+a {
+    display: block;
+    font-size: 30px;
+    font-family:monospace;
+    font-kerning: normal;
+    font-weight: bold;
+    color: lightblue;
+    align: center;
+    text-decoration: none;
+
+}
+
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="https://unpkg.com/muuri@0.6.3/dist/muuri.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Sydney, Australia</h1>
+    <h3>Let's Go To Sydney!</h3>
+    <p>Sydney is the Capital of New South Wales. It is also one of the most iconic cities in the world.
+       With countless things to do in and near this city, I compiled a list of some of the best
+       attractions this major city has to offer. Whether you have a month or a day, Sydney has
+       something to appeal to everyone.</p>
+  </div>
+
+
+  <div class="grid">
+    <div class="item">
+      <div class="item-content">
+        <img src="bondi.jpg"height="255" width="auto" /><a href="https://us.sydney.com/things-to-do/beach-lifestyle/bondi-beach">Bondi Beach</a>
+      </div>
+    </div>
+
+  <div class="item">
+    <div class="item-content">
+      <img src="garden.jpg"height="255"width="auto" /><a href="https://www.rbgsyd.nsw.gov.au/the-calyx">The Calyx</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-content">
+      <img src="lp.jpg"height="255" width=auto /><a href="https://us.sydney.com/destinations/sydney/sydney-north/attractions/luna-park-sydney">Luna Park</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-content">
+      <img src="sq.jpg"height="275" width="auto" />
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-content">
+      <img src="beach.jpg"height="250" width="auto" />
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-content">
+      <img src="crepe.jpg"height="auto" width="130" />
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-content">
+      <img src="hc.jpg"height="auto" width="130" /><a href="https://honeycreme.com.au/">Creme</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-content">
+      <img src="ws.jpg"height="250" width="auto" /><a href="https://www.featherdale.com.au/">Featherdale</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-content">
+      <img src="bobe.jpg"height="300" width=auto />
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-content">
+      <img src="sydau.jpg"height="290" width="auto" />
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-content">
+      <img src="aust.jpg"height="240" width="auto" />
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-content">
+      <img src="2.jpg"height="250" width="auto" />
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-content">
+      <img src="3.jpg" height="180" width="auto"/>
+    </div>
+  </div>
+  </div>
+<script>
+var grid = new Muuri('.grid', {
+  dragEnabled: true,
+  layout: {
+    fillGaps: true
+  }
+});
+
+
+window.addEventListener('load', function () {
+  grid.refreshItems().layout();
+
+  document.body.classList.add('images-loaded');
+});
+</script>
+
+</body>
+
+
+
+
+</html>
