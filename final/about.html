@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+  <html>
+    <link rel="stylesheet" type="text/css" href="desktop.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+      <script src="https://unpkg.com/muuri@0.6.3/dist/muuri.min.js"></script>
+  <head>
+  <title>Stephanie Castro</title><link href='https://fonts.googleapis.com/css?family=La Belle Aurore' rel='stylesheet'>
+        <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 600px)">
+        <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
+        <meta name="viewport" content="initial-scale=1">
+
+  </head>
+  <body>
+   <main>
+
+
+  <header>
+  <h1 align="center">Steph Castro</h1>
+  <nav>
+    <ul>
+      <li><a href="miami.html">305</a></li>
+      <li><a href="cats.html">Animals</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">Faces</a></li>
+      <li><a href="places.html">Places</a></li>
+    </ul>
+  </nav>
+
+
+    <div class="grid">
+      <div class="item">
+        <div class="item-content">
+          <img src="img/tito.JPG"height="450" width="auto" />
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-content">
+          <img src="img/sky.jpg"height="auto" width="400" />
+        </div>
+      </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="img/obama.jpg"height="600"width="auto" />
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-content">
+        <img src="img/michi.jpg"height="150" width=auto />
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="img/gigi.jpg"height="auto" width="400" />
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="img/handstand.jpg"height="275" width="auto" />
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="img/dad.jpg"height="250" width="auto" />
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="img/wg.jpg"height="250" width="auto" />
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="img/blake.jpg"height="auto" width="130" />
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="img/clean.jpg"height="auto" width="230" />
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="img/epf.jpg"height="180" width=auto />
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-content">
+        <img src="img/henry.jpg"height="290" width="auto" />
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="img/film.jpg"height="250" width="auto" />
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="2.jpg"height="250" width="auto" />
+      </div>
+    </div>
+    </div>
+  <script>
+  var grid = new Muuri('.grid', {
+    dragEnabled: true,
+    layout: {
+      fillGaps: true
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    grid.refreshItems().layout();
+
+    document.body.classList.add('images-loaded');
+  });
+  </script>
+
+  </body>
+
+
+
+
+  </html>

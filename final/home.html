@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+  <html>
+    <link rel="stylesheet" type="text/css" href="desktop.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+  <head>
+    <title>Stephanie Castro</title><link href='https://fonts.googleapis.com/css?family=La Belle Aurore' rel='stylesheet'>
+          <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 600px)">
+          <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
+          <meta name="viewport" content="initial-scale=1">
+
+    <style>
+
+
+
+    </style>
+
+  </head>
+  <body>
+     <main>
+      hello
+
+    <header>
+      <h1 align="center">Steph Castro</h1>
+      <nav>
+        <ul>
+          <li><a href="miami.html">305</a></li>
+          <li><a href="cats.html">Animals</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">Faces</a></li>
+          <li><a href="places.html">Places</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <h2 id="info2">About The Photographer</h2>
+	<div id="Info2info"><em> Stephanie Castro is a student in the School of Communications at the University of Miami. </em></div>
+  <h2 id="info4">About The Photos</h2>
+<div id="Info4info"><em> My main source of inspiration is Miami. The culture, diversity, and history of Miami are all left on my backburner whenever (and wherever) I photograph.</em></div>
+    <h2 id="info3">About The Lens</h2>
+  <div id="Info3info"><em> Most of my pictures are taken with a Canon EOS Rebel T6 or the iPhone 7.</em></div>
+
+    <div>
+        <img src="img/hotel.jpg"height="auto" width="130" />
+          <img src="img/peanut.jpg"height="auto" width="130" />
+            <img src="img/mo.jpg"height="auto" width="130" />
+              <img src="img/life.jpg"height="auto" width="130" />
+                <img src="img/.jpg"height="auto" width="130" />
+    </div>
+      </main>
+      <script src="js/jquery-3.3.1.min.js">
+      	</script>
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+      	</script>
+      	<script>
+      	       $(document).ready(function(){
+
+      $("#info2").mouseenter(function(){
+                 $("#recepticle").html("");
+                   $("#info2").css("background-color", "transparent");
+
+               });
+
+
+
+                   $("#Info2info").hide();
+                   $("#info2").click(function(){
+                     $("#Info2info").toggle();
+
+                   $("#info").css("background-color", "transparent");
+                 });
+                 $("#info3").mouseenter(function(){
+                            $("#recepticle").html("");
+                              $("#info3").css("background-color", "transparent");
+
+                          });
+
+
+
+                              $("#Info3info").hide();
+                              $("#info3").click(function(){
+                                $("#Info3info").toggle();
+
+                              $("#info").css("background-color", "transparent");
+                            });
+                            $("#info4").mouseenter(function(){
+                                       $("#recepticle").html("");
+                                         $("#info4").css("background-color", "transparent");
+
+                                     });
+
+
+
+                                         $("#Info4info").hide();
+                                         $("#info4").click(function(){
+                                           $("#Info4info").toggle();
+
+                                         $("#info").css("background-color", "transparent");
+                                       });
+
+
+               	 });
+
+               	</script>
+  </body>
+  </html>
