@@ -98,10 +98,11 @@ main{
 
 
 #Info2info{
-	width: 200px;
+	width: 400px;
 	margin: 0 auto;
 	text-align: center;
   height: 10px;
+
 }
 
 #Info2{
@@ -111,7 +112,7 @@ main{
 	text-align: center;
 }
 #Info3info{
-	width: 200px;
+	width: 400px;
 	margin: 0 auto;
 	text-align: center;
   height: 10px;
@@ -123,7 +124,7 @@ main{
 	margin: 0 auto;
 	text-align: center;
 }#Info4info{
-	width: 200px;
+	width: 400px;
 	margin: 0 auto;
 	text-align: center;
   height: 10px;
