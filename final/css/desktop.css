@@ -1,5 +1,5 @@
 .header {
-  padding: 10px;
+  padding: 50px;
     text-align: center;
     background: lightblue;
     color: white;
@@ -7,7 +7,10 @@
     font-family: monospace;
     font-style: italic;
     font-weight:bold;
-    height: 400px;
+    height: 4000px;
+    padding-bottom: 300px;
+
+
 }
 .grid {
   position: relative;
@@ -62,7 +65,19 @@ nav ul li a{
 nav ul li a:hover{
 
 }
-header, footer{
+header{
+  width:auto;
+  height: 200px;
+  background-color:black;
+  margin:auto;
+  margin-top: -50px;
+  font-family:'La Belle Aurore';font-size: 22px;
+  text-align: center;
+  font-size: 200;
+  padding-bottom: 300px;
+}
+
+ footer{
   width:auto;
   height: 200px;
   background-color:black;
@@ -102,49 +117,58 @@ main{
 
 
 #Info2info{
-  width: 400px;
+  width: 900px;
 	margin: 0 auto;
 	text-align: center;
   height: 60px;
   font-family:'La Belle Aurore';
   color: #cc0000;
+  font-size: 30px;
+  padding-bottom: 30px;
 
 }
 
 #Info2{
   height: 10px;
-	width: 200px;
+	width: 900px;
 	margin: 0 auto;
 	text-align: center;
+  font-size: 30px;
 }
 #Info3info{
-  width: 400px;
+  width: 900px;
 	margin: 0 auto;
 	text-align: center;
   height: 60px;
   font-family:'La Belle Aurore';
   color: #cc0000;
+  font-size: 30px;
 }
 
 #Info3{
   height: 10px;
-	width: 200px;
+	width: 900px;
 	margin: 0 auto;
 	text-align: center;
+  font-size: 30px;
 }#Info4info{
-	width: 400px;
+	width: 900px;
 	margin: 0 auto;
 	text-align: center;
   height: 60px;
   font-family:'La Belle Aurore';
   color: #cc0000;
+  padding-bottom: 90px;
+  font-size: 30px;
 }
 
 #Info4{
-  height: 10px;
-	width: 200px;
+  height: 50px;
+	width: 900px;
 	margin: 0 auto;
+  padding-bottom: 20px;
 	text-align: center;
+  font-size: 30px;
 }
 .demo {
     width:420px;
